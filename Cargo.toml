@@ -1,0 +1,49 @@
+[package]
+name = "plm-gtk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+adw = { version = "0.4.3", package = "libadwaita", features = ["v1_2"] }
+anyhow = "1.0.71"
+gtk = { version = "0.6.6", package = "gtk4", features = ["v4_10"] }
+once_cell = "1.18.0"
+
+[dependencies.relm4-icons]
+version = "0.6.0-beta.1"
+features = [
+    "menu",
+    "loupe",
+    "floppy",
+    "star-filled-rounded",
+    "checkmark",
+    "check-round-outline-whole",
+    "left",
+    "warning",
+    "flag-outline-thin",
+    "flag-outline-thick",
+    "flag-filled",
+    "work-week",
+    "alarm",
+    "plus",
+    "x-circular",
+    "small-x",
+    "info",
+    "editor",
+    "pencil-and-paper",
+    "update",
+    "clipboard",
+    "image-adjust-brightness",
+    "file-cabinet",
+    "star-outline-rounded",
+    "controls",
+    "dark-mode",
+    "list-large",
+    "dock-left",
+]
+
+[dependencies.relm4]
+version = "0.6.0"
+features = ["macros", "libadwaita", "gnome_43"]
